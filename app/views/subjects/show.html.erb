@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= @subject.name %>
+</p>
+
+<p>
+  <strong>Teacher_id:</strong>
+  <%= @subject.teacher_id %>
+</p>
+
+<p>
+  <strong>Student_id:</strong>
+  <%= @subject.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

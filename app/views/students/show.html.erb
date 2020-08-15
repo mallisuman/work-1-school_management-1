@@ -1,0 +1,38 @@
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+ 
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @student.address %>
+</p>
+
+<p>
+  <strong>Mobile_Number:</strong>
+  <%= @student.mobile_number %>
+</p>
+
+<p>
+  <strong>Subject_id:</strong>
+  <%= @student.subject_id %>
+</p>
+
+<p>
+  <strong>Teacher_id:</strong>
+  <%= @student.teacher_id %>
+</p>
+
+<% @student.marks.each do |m| %>
+  Subject: <%= m.subject.name %> 
+  Marks: <%= m.number %>
+<% end %>
+
+<%= link_to 'Add marks', new_mark_path %>
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

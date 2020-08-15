@@ -1,0 +1,17 @@
+<p>
+  <strong>Number:</strong>
+  <%= @mark.number %>
+</p>
+
+<p>
+  <strong>Subject_id:</strong>
+  <%= @mark.subject_id %>
+</p>
+
+<p>
+  <strong>Student_id:</strong>
+  <%= @mark.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_mark_path(@mark) %> |
+<%= link_to 'Back', marks_path %>
